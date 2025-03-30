@@ -1,0 +1,96 @@
+.team-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-title {
+    font-family: var(--font-titles);
+    font-size: var(--size-titles);
+}
+
+.team-subtitle {
+    margin: 1rem 0;
+    text-align: center;
+    font-family: var(--font-text);
+    font-size: var(--size-text);
+}
+
+.members {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.members-card {
+    min-width: 178px;
+}
+
+.members-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.members-text {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.members-name {
+    font-family: var(--font-text);
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.members-role {
+    font-family: var(--font-text);
+    color: var(--text-color);
+}
+
+.members-description {
+    font-family: var(--font-text);
+    font-size: var(--size-text);
+    color: var(--text-color);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-redirect {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.social-redirect:hover {
+    color: var(--main-color);
+}
+
+.members-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media (max-width: 640px) {
+    .members {
+        flex-direction: column;
+    }
+
+    .members-card {
+        width: 100%;
+    }
+}
